@@ -19,6 +19,9 @@ spec:
       containers:
       - name: guj-main
         image: tignear/guj-main
+        resources:
+          requests: 
+            cpu: "100m"
         env:
         - name: GUILD_UTILS_J_MAIN_DISCORD_TOKEN
           valueFrom:
@@ -90,6 +93,9 @@ spec:
       containers:
       - name: guj-sub
         image: tignear/guj-sub
+        resources:
+          requests:
+            cpu: "50m"
         env:
         - name: GUILD_UTILS_J_SUB_DISCORD_TOKEN
           valueFrom:
@@ -147,6 +153,9 @@ spec:
       containers:
       - name: guj-sub
         image: tignear/guj-sub
+        resources:
+          requests: 
+            cpu: "50m"
         env:
         - name: GUILD_UTILS_J_SUB_DISCORD_TOKEN
           valueFrom:
