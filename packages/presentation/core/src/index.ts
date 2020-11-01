@@ -1,5 +1,4 @@
 import Text2SpeechMonitor from "./monitors-v2/text2speech";
-import * as GUILD_SETTINGS from "./guild_settings_keys";
 import Engine from "./text2speech/engine";
 import { initEngineAndKuromoji } from "./bootstrap/engine";
 export { getLangType, getLang } from "./util/get-lang";
@@ -34,7 +33,7 @@ export {
 } from "./bootstrap/help";
 export { buildParser } from "./util/parser";
 export { InstanceState } from "./util/instance-state";
-export { Engine, GUILD_SETTINGS, Text2SpeechMonitor, initEngineAndKuromoji };
+export { Engine, Text2SpeechMonitor, initEngineAndKuromoji };
 export {
   buildBadge,
   buildCategoryDescription,
