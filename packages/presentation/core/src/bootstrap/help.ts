@@ -169,7 +169,7 @@ export function infoCategory(
   });
   return {
     type: "category",
-    name: () => "Info",
+    name: () => "BotInfo",
     embed,
     summary,
     resolverValue,
@@ -218,7 +218,7 @@ export function infoCategoryValue(
     record.ping,
     record.stats,
     record.info,
-  ].map((e) => commandFromSchema(e, "Info", ctx));
+  ].map((e) => commandFromSchema(e, "BotInfo", ctx));
 }
 export function voiceCategory(
   color: ColorResolvable,

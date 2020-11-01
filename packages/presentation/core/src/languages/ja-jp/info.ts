@@ -98,7 +98,7 @@ export function categoryInfoEmbed(
 ): (ctx: HelpCommandCotext) => MessageEmbed {
   return (ctx) =>
     createEmbedWithMetaData({ color, ...ctx.executor })
-      .setTitle("Info")
+      .setTitle("BotInfo")
       .setDescription(categoryDesc)
       .addFields(createCategoryFields("ja_JP", value, ctx));
 }
