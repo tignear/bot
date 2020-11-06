@@ -28,7 +28,14 @@ jobs:
           git config filter.lfs.smudge "git-lfs smudge --skip %f"
           # Add here contents of sparse-checkout line by line
           echo /packages/domains/command-data > .git/info/sparse-checkout
-          echo /packages/protocol/command-data-common >> .git/info/sparse-checkout
+          echo /packages/domains/meta > .git/info/sparse-checkout
+          echo /packages/protocol/protocol_command-schema-core >> .git/info/sparse-checkout
+          echo /packages/protocol/protocol_command-schema-main >> .git/info/sparse-checkout
+          echo /packages/protocol/protocol_command-schema-core-bootstrap >> .git/info/sparse-checkout
+          echo /packages/protocol/protocol_command-schema-main-bootstrap >> .git/info/sparse-checkout
+          echo /packages/util/@guild-utils/command-schema >> .git/info/sparse-checkout
+          echo /packages/util/@guild-utils/command-types >> .git/info/sparse-checkout
+          echo /packages/util/@guild-utils/command-types-discord.js >> .git/info/sparse-checkout
           echo /packages/presentation/web >> .git/info/sparse-checkout
           echo /package.json >> .git/info/sparse-checkout
           echo /yarn.lock >> .git/info/sparse-checkout
